@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffdbed;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.center-box {
+    background-color: #ffecfa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 700px;
+    width: 100%;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.message {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+}
+
+.message:after {
+    content: "🎮";
+    display: inline-block;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.instruction {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #050505;
+    background-color: #fdc3c3;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reyhaneh {
+    font-weight: bold;
+}
+
+.reyhaneh:after {
+    content: "💻";
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.green,
+.yellow,
+.red {
+    font-size: 16px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.green:after {
+    content: "💚";
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.yellow:after {
+    content: "💛";
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.red:after {
+    content: "💗";
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #df356e;
+    color: #030303;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f15a8c;
+}
