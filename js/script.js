@@ -13,6 +13,7 @@ function gameStart() {
     // In case the game started
     if (!gamePlay) {
         gamePlay = true;
+        // When we want to start, the desired part will be empty
         gameArea.innerHTML = "";
         score = 0;
         creator(6);
@@ -49,6 +50,12 @@ function gameStart() {
     }
 };
 
+function gameEnd() {
+    message.innerHTML = "Bravo!  You solved the guess game in " + score + " Guesses";
+    gamePlay = false;
+    button.innerHTML = "Restart Game";
+}
+
 function creator(num) {
     // Create number boxes
     for (let x = 0; x < num; x++) {
@@ -63,7 +70,7 @@ function creator(num) {
         element.classList.add("number");
         // Generate random integers between 0 and 9
         element.correct = Math.floor(Math.random() * 10);
-        element.value = element.correct;
+        element.value = 0;
         // With this command ---> it goes forward in order by pressing the tab button
         element.order = x;
         // Placing an element as a subset of another element

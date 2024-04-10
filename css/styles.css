@@ -93,7 +93,7 @@ header {
 
 .message {
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
     color: #333;
 }
@@ -101,7 +101,7 @@ header {
 .message:after {
     content: "⏱";
     display: inline-block;
-    font-size: 24px;
+    font-size: 22px;
     margin-left: 10px;
 }
 
