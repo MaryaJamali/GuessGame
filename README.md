@@ -1,5 +1,5 @@
 ## Description:
-```Guess Game``` is an intellectual game that involves guessing a pattern of numbers. This game is written in JavaScript language.🧡
+```Guess Game``` 🎮 is an intellectual game that involves guessing a pattern of numbers. This game is written in JavaScript language.🧡
 In this game, there are six houses, each of which has a hidden number. You have to discover the hidden number pattern with the fewest possible guesses.
 After each guess, Reyhana 💻 will help you get closer to the correct answer. If your guess is correct, it will color the corresponding house green 💚
 and will help you guess the correct number with yellow 💛 and red 💗 colors.
