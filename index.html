@@ -1,10 +1,36 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guess Game</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <div class="center-box">
+            <header>
+                <div class="message">Guess Game</div>
+            </header>
+            <section class="main-content">
+                <div class="instruction">
+                    Welcome to the "Guess" game! Hello, my name is Kuki and I am here to help you in this game. In this
+                    game, we have 4 houses. The computer has chosen a pattern of numbers and you have to solve that
+                    pattern with the least possible guesses.
+                    After each guess, I will help you to get the correct answer as soon as possible
+                    Pay attention, green houses means you guessed it right
+                    Yellow houses means reduce your chosen number
+                    The red house means increase your chosen number
+                    Do you want to start the game now?
+                </div>
+                <div class="game"></div>
+                <button class="btn">Start</button>
+            </section>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
