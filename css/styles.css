@@ -133,3 +133,25 @@ header {
 .btn:hover {
     background-color: #f15a8c;
 }
+
+footer {
+    background-color: #ffb0d8;
+    color: #0a0a0a;
+    padding: 20px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #080808;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #df6666;
+}
