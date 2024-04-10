@@ -26,13 +26,13 @@ header {
     margin-bottom: 20px;
 }
 
-.message {
+.header-title {
     font-size: 26px;
     font-weight: bold;
     color: #333;
 }
 
-.message:after {
+.header-title:after {
     content: "🎮";
     display: inline-block;
     font-size: 24px;
@@ -89,6 +89,32 @@ header {
     display: inline-block;
     font-size: 16px;
     margin-left: 5px;
+}
+
+.message {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+}
+
+.message:after {
+    content: "⏱";
+    display: inline-block;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+}
+
+.numb {
+    font-size: 2em;
 }
 
 .btn {
