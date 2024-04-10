@@ -7,8 +7,10 @@ let gamePlay = false;
 let score = 0;
 // Add event to button
 button.addEventListener("click", gameStart);
+
 function gameStart() {
-    // If the game was running
+
+    // In case the game started
     if (!gamePlay) {
         gamePlay = true;
         gameArea.innerHTML = "";
@@ -16,7 +18,33 @@ function gameStart() {
         creator(6);
         button.innerHTML = "Check Numbers";
         message.innerHTML = "Guess The Numbers"
+        // In case the game is running
     } else {
+        const numbers = document.querySelectorAll(".number");
+        score++;
+        message.innerHTML = "Guesses " + score;
+        let winCondition = 0;
+        // Extracting the correct answer
+        for (let i = 0; i < numbers.length; i++) {
+
+            // Comparing user input numbers with correct numbers
+            if (numbers[i].value == numbers[i].correct) {
+                numbers[i].style.backgroundColor = "green";
+                numbers[i].style.color = "white";
+                winCondition++;
+            } else {
+                // Using IF condition linearly
+                let color = (numbers[i].value < numbers[i].correct) ? "red" : "yellow";
+                numbers[i].style.backgroundColor = color;
+                numbers[i].style.color = "black";
+            }
+            // If the number of correct guess columns is equal to the total number of columns in the game
+            if (winCondition == numbers.length) {
+                gameEnd();
+
+            }
+
+        }
 
     }
 };
@@ -33,8 +61,9 @@ function creator(num) {
         element.size = 1;
         element.style.width = "50px";
         element.classList.add("number");
+        // Generate random integers between 0 and 9
         element.correct = Math.floor(Math.random() * 10);
-        element.value = 0;
+        element.value = element.correct;
         // With this command ---> it goes forward in order by pressing the tab button
         element.order = x;
         // Placing an element as a subset of another element
